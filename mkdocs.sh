@@ -14,7 +14,7 @@ rm -rf docs &>/dev/null
 
 echo "Generating JavaDoc"
 
-javadoc -quiet -d docs -windowtitle 'Unofficial IntelliJ Community Edition API docs' -footer '<p>This is <b>unofficial</b> documentation and <b>not affiliated with Jetbrains s.r.o.</b> at all. We can <b>not guarantee the correctness</b> of this documentation.</p>' -sourcepath ${SRCPATH} -subpackages ${PACKAGES} 
+javadoc -quiet -d docs -doctitle '<h1>Unofficial IntelliJ Community Edition API documentation</h1>' -windowtitle 'Unofficial IntelliJ Community Edition API docs' -footer '<p>This is <b>unofficial</b> documentation and <b>not affiliated with Jetbrains s.r.o.</b> at all. We can <b>not guarantee the correctness</b> of this documentation.</p>' -sourcepath ${SRCPATH} -subpackages ${PACKAGES} 
 
 # ignore javadoc errors
 
