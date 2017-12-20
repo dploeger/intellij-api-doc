@@ -1,5 +1,5 @@
 language: java
-script: mkdocs.sh 
+script: bash mkdocs.sh 
 deploy:
     provider: pages
     local_dir: docs
