@@ -15,3 +15,7 @@ rm -rf docs &>/dev/null
 echo "Generating JavaDoc"
 
 javadoc -quiet -d docs -sourcepath ${SRCPATH} -subpackages ${PACKAGES} 
+
+# ignore javadoc errors
+
+exit 0
