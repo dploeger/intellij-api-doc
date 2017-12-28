@@ -1,5 +1,7 @@
 language: java
 script: bash run-linux.sh
+services:
+    - docker
 deploy:
     provider: pages
     local_dir: docs
