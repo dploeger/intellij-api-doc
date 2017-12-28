@@ -11,4 +11,6 @@ This repository is usually used via [Travis](https://travis-ci.org), but if you 
 
     bash mkdocs.sh
 
-This should work on all unixoid operating systems. (Tested on Linux and macOS)
+This should work on all unixoid operating systems. (Tested on Linux with OpenJDK9 and macOS with Oracle JDK 8)
+
+If you'd like to use the same environment travis uses, you can run the build in a docker container. For linux (or nodes, that support native docker), run: `bash run-linux.sh`. For macOS nodes, [docker-sync](http://docker-sync.io/) can be used to speed up performance. Use `bash run-macos.sh` there.
