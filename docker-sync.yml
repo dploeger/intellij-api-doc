@@ -1,0 +1,6 @@
+version: "2"
+syncs:
+  intellij-api-doc:
+    src: "."
+    sync_excludes: [ ".git*", "docker-*", "LICENSE", "README" ]
+    sync_strategy: "unison"

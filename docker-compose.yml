@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  generator:
+    image: "openjdk:9"
+    command: "bash mkdocs.sh"
+    working_dir: "/usr/local/src/intellij-api-doc"
+    environment:
+        - TEST
+    volumes:
+      - "intellij-api-doc:/usr/local/src/intellij-api-doc:nocopy"
+
+volumes:
+  intellij-api-doc:
+    external: true
