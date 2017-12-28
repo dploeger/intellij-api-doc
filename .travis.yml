@@ -1,5 +1,5 @@
 language: java
-script: bash run-linux.sh
+script: bash run-travis.sh
 services:
     - docker
 deploy:
